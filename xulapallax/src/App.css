@@ -1,5 +1,14 @@
-.App {
-  text-align: center;
-  background-color: #C70067;
-  color: white;
+.nav {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  /*background: #FDE52D;*/
+  background: transparent;
+  width: 100vw;
+}
+
+.flags {
+  width: 153px;
+  float: right;
+  padding: 30px; 
 }
