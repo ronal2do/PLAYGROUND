@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!-- <script src="%PUBLIC_URL%/parallax.js"></script> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -15,13 +14,34 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+  
+
+    </style>
   </head>
   <body>
 
+    <div id="container" class="imagemContainer">
+      <ul id="scene" class="scene">
+        <li class="layer" data-depth="1.00"><img src="images/layer1.png" onClick="divFunction(1)" ></li>
+        <li class="layer" data-depth="0.80"><img src="images/layer2.png" onClick="divFunction(2)" ></li>
+        <li class="layer" data-depth="0.60"><img src="images/layer3.png" onClick="divFunction(3)" ></li>
+        <li class="layer" data-depth="0.40"><img src="images/layer4.png" onClick="divFunction(4)" ></li>
+        <li class="layer" data-depth="0.20"><img src="images/layer5.png" onClick="divFunction(5)" ></li>
+        <li class="layer" data-depth="0.00"><img src="images/layer6.png" onClick="divFunction(6)" ></li>
+      </ul>
+    </div>
+
     <div id="root"></div>
-    <!-- <script>
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
-    </script> -->
+
+    <script src="%PUBLIC_URL%/parallax.js"></script> 
+    <script>
+        // init
+
+        const scene = document.getElementById('scene');
+        const parallax = new Parallax(scene);
+
+    </script> 
+
   </body>
 </html>

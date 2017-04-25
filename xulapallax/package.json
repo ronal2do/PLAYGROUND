@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "expose-loader": "^0.7.3",
+    "glamor": "^2.20.24",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },

@@ -1,0 +1,51 @@
+.App {
+  text-align: left;
+  background-color: #C70067;
+  color: white;
+  background-image: url(./images/fundo1.png), url(./images/fundo2.png);
+  background-position: center bottom, center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.Text {
+  text-align: left;
+}
+
+.BoxHeader {
+  height: 170px;
+}
+
+.Box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 180px;
+}
+
+.Media {
+  max-width: 640px;
+}
+
+.Controller {
+  display: flex;
+  color: #FDE52D;
+  align-items: center;
+  justify-content: center;
+  /*padding: 30px;*/
+  width: 134px;
+}
+
+.lavi-image {
+  width: 366px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .Box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
