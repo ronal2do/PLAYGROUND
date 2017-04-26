@@ -14,7 +14,12 @@ const bg = css({
 
 const ct = css({
     padding: 30,
+    '@media (max-width: 768px)' : {
+        padding: 5,
+        fontSize: 21,
+    }
 })
+
 
 class Title extends PureComponent {
     render() {

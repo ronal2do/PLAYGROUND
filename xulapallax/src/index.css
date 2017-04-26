@@ -65,6 +65,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+    line-height: 29px;
+  }
   .container {
     width: 100%;
   }
@@ -90,11 +95,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
 }
 
 .imagemContainer {
   position: relative;
-  max-width: 600px;
+  /*max-width: 1000px;*/
   margin: 0 auto;
 }
 
@@ -125,42 +137,42 @@ img {
 }
 
 .layer:nth-child(1) {
-  opacity: 0.15;
+  /*opacity: 0.15;*/
 }
 .layer:nth-child(1) button {
   -webkit-transform: rotate(150deg);
 }
 
 .layer:nth-child(2) {
-  opacity: 0.30;
+  /*opacity: 0.30;*/
 }
 .layer:nth-child(2) button {
   -webkit-transform: rotate(120deg);
 }
 
 .layer:nth-child(3) {
-  opacity: 0.45;
+  /*opacity: 0.45;*/
 }
 .layer:nth-child(3) button {
   -webkit-transform: rotate(90deg);
 }
 
 .layer:nth-child(4) {
-  opacity: 0.60;
+  /*opacity: 0.60;*/
 }
 .layer:nth-child(4) button {
   -webkit-transform: rotate(60deg);
 }
 
 .layer:nth-child(5) {
-  opacity: 0.75;
+  /*opacity: 0.75;*/
 }
 .layer:nth-child(5) button {
   -webkit-transform: rotate(30deg);
 }
 
 .layer:nth-child(6) {
-  opacity: 0.90;
+  /*opacity: 0.90;*/
 }
 .layer:nth-child(6) button {
 

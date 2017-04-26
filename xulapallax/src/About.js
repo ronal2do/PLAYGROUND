@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import { style } from 'glamor';
 import Title from './components/Title';
 import fotoLavi from './images/lavi.png';
+import clock from './images/history-clock-button.svg';
+import movie from './images/movie.svg';
 import './About.css';
+
+const ct = style({
+    paddingTop: 144,
+    '@media (max-width: 768px)' : {
+        paddingTop: 0,
+    }
+})
 
 class About extends Component {
     state = { showVideo: false }
@@ -16,14 +26,18 @@ class About extends Component {
         const { showVideo } = this.state;
 
         if (showVideo) return (
-          <div className="Controller" style={{ paddingTop: 144 }}>
-            <a onClick={ () => this.handleChange() } >text</a>
+          <div className="Controller" {...ct}>
+            <a onClick={ () => this.handleChange() } >
+              <img src={clock} className="Icons"/>
+            </a>
           </div>
         );
 
         return (
           <div className="Controller"> 
-            <a onClick={ () => this.handleChange() } >video</a>
+            <a onClick={ () => this.handleChange() } >
+              <img src={movie} className="Icons" />   
+            </a>
           </div>
         )
     }
@@ -35,7 +49,7 @@ class About extends Component {
           <div className="Media" >
             <Title title="Lavi Kasongo" />
             <div>
-              <iframe width="640" height="360" src="https://www.youtube.com/embed/xG8EEGsTXkQ" />
+              <iframe className="iframe" width="640" height="360" src="https://www.youtube.com/embed/xG8EEGsTXkQ" />
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <img src="http://img.youtube.com/vi/xG8EEGsTXkQ/mqdefault.jpg" alt="" style={{ width: 200, height: 110 }} />
