@@ -1,0 +1,161 @@
+
+@keyframes menu {
+  from {
+    opacity: .6;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 267px;
+  }
+}
+
+
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+li.layer {
+    /*animation: wave 6s 0.1s infinite linear;*/
+}
+
+.nav {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  background: transparent;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu {
+  float: left;
+  padding: 30px; 
+  cursor: pointer;
+  display: block;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+}
+
+.menu span.before, .menu span.after, .menu span.main {
+  display: block;
+  width: 37px;
+  height: 7px;
+  background-image: url('./images/dash.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 3px;
+  transition: transform 100ms;
+}
+
+
+
+.menu.active .before {
+    margin: 0;
+    transition: transform 200ms;
+    transform: translateY(12px) rotate(45deg);
+}
+
+.menu.active .main {
+    display: none;
+}
+
+.menu.active .after {
+    margin: 0;
+    transition: transform 200ms;
+    transform: translateY(2px) rotate(-45deg);
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flagsContainer {
+  display: flex;
+}
+
+.flags {
+  width: 30px;
+  background-size: cover;
+  background-position: initial;
+  height: 30px;
+  /*float: right;*/
+  margin: 30px 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.flags.false {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.flags.false:hover {
+  filter: grayscale(0.5);
+  opacity: 0.5;
+}
+
+.flags:nth-child(1) {
+  background-position: initial;
+}
+
+.flags:nth-child(2) {
+  background-position: 26%;
+}
+
+.flags:nth-child(3) {
+  background-position: 51%;
+}
+
+.flags:nth-child(4) {
+  background-position: 75%;
+}
+
+.flags:nth-child(5) {
+  background-position: 100%;
+  margin-left: 24px;
+}
+
+.cartBar {
+  width: 267px;
+  background: white;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  animation-name: menu;
+  animation-duration: 200ms;
+}
+
+.menuBar {
+  /*padding: 0 30px;*/
+  padding-top: 65px;
+  width: 150px;
+  text-align: left;
+}
+
+.menuItem {
+  color: var(--brandColor);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: #5236A4;
+}
+
+p {
+  transition: all 1000ms ease-in-out;
+}

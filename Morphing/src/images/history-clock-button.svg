@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-468.153 -753.595 30 28.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fde52d;
+        opacity: 0.9;
+      }
+    </style>
+  </defs>
+  <g id="history-clock-button" transform="translate(-468.153 -766.345)">
+    <g id="history" transform="translate(0 12.75)">
+      <path id="Path_1395" data-name="Path 1395" class="cls-1" d="M15.75,12.75a14.008,14.008,0,0,0-12.3,7.2L0,16.5v9.75H9.75l-4.2-4.2a11.288,11.288,0,1,1,10.2,16.2A11.387,11.387,0,0,1,5.1,30.75H1.95a14.273,14.273,0,1,0,13.8-18Zm-2.25,7.5V27.9l7.05,4.2,1.2-1.95-6-3.6v-6.3Z" transform="translate(0 -12.75)"/>
+    </g>
+  </g>
+</svg>

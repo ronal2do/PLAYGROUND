@@ -1,0 +1,41 @@
+.Footer {
+  text-align: left;
+  background-color: var(--brandColor);
+  color: white;
+  background-image: url(./images/fundo3.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.GridFooter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.Copyright {
+
+  font-size: .7em;
+}
+
+.Flex{
+  display: flex;
+  justify-content: space-between;
+}
+.Flex-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .modal {
+   flex-direction: column-reverse;
+  }
+  .infos-legend {
+    align-self: center;
+  }
+}
